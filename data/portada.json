@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "RELOJES",
+    "subtitulo": "Toda la colección",
+    "foto": "/images/portada-relojes.jpg",
+    "boton": "Todos"
+  },
+  {
+    "titulo": "CITIZEN",
+    "subtitulo": "Modelos disponibles",
+    "foto": "/images/portada-citizen.jpg",
+    "boton": "Citizen"
+  },
+  {
+    "titulo": "ORIENT",
+    "subtitulo": "Modelos disponibles",
+    "foto": "/images/portada-orient.jpg",
+    "boton": "Orient"
+  },
+  {
+    "titulo": "SEIKO",
+    "subtitulo": "Modelos disponibles",
+    "foto": "/images/portada-seiko.jpg",
+    "boton": "Seiko"
+  }
+]

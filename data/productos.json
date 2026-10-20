@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Orient Quartz",
+    "marca": "Orient",
+    "precio": 250000,
+    "precio_anterior": 0,
+    "foto": "/images/orient-quartz.jpg",
+    "descripcion": "Reloj Orient a cuarzo, nuevo, en su caja original.",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Tudor Le Royer",
+    "marca": "Otros",
+    "precio": 599,
+    "precio_anterior": 0,
+    "foto": "/images/tudor-le-royer.jpg",
+    "descripcion": "",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Citizen Automático",
+    "marca": "Citizen",
+    "precio": 159000,
+    "precio_anterior": 175000,
+    "foto": "/images/citizen-automatico.jpg",
+    "descripcion": "Esfera azul y malla de acero.",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Election Grand Prix",
+    "marca": "Otros",
+    "precio": 140000,
+    "precio_anterior": 0,
+    "foto": "/images/election-grand-prix.jpg",
+    "descripcion": "",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Citizen Automático Seven Eagles",
+    "marca": "Citizen",
+    "precio": 130000,
+    "precio_anterior": 150000,
+    "foto": "/images/citizen-seven-eagles.jpg",
+    "descripcion": "",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Citizen Cronógrafo Automático (con service)",
+    "marca": "Citizen",
+    "precio": 380000,
+    "precio_anterior": 0,
+    "foto": "/images/citizen-cronografo-automatico.jpg",
+    "descripcion": "Con service realizado.",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Seiko 5 Automático",
+    "marca": "Seiko",
+    "precio": 150000,
+    "precio_anterior": 0,
+    "foto": "/images/seiko-5-automatico.jpg",
+    "descripcion": "",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Reloj Desta suizo a cuerda",
+    "marca": "Otros",
+    "precio": 135000,
+    "precio_anterior": 0,
+    "foto": "/images/desta-suizo-cuerda.jpg",
+    "descripcion": "Suizo, a cuerda.",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Citizen Cronógrafo Titanio",
+    "marca": "Citizen",
+    "precio": 149000,
+    "precio_anterior": 175000,
+    "foto": "/images/citizen-cronografo-titanio.jpg",
+    "descripcion": "Caja y malla de titanio.",
+    "hay_stock": true,
+    "ejemplo": false
+  },
+  {
+    "nombre": "Tissot PR 516",
+    "marca": "Otros",
+    "precio": 279000,
+    "precio_anterior": 0,
+    "foto": "/images/tissot-pr516.jpg",
+    "descripcion": "",
+    "hay_stock": true,
+    "ejemplo": false
+  }
+]

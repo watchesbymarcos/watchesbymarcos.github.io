@@ -1,0 +1,98 @@
+# Configuración del panel de edición (Pages CMS - pagescms.org)
+media:
+  input: images
+  output: /images
+  categories: [image]
+  rename: safe
+
+content:
+  - name: productos
+    label: Relojes
+    type: file
+    path: data/productos.json
+    format: json
+    list: true
+    fields:
+      - name: nombre
+        label: Nombre del reloj
+        type: string
+        required: true
+      - name: marca
+        label: Marca
+        type: select
+        options:
+          values: [Citizen, Orient, Seiko, Otros]
+      - name: precio
+        label: Precio (solo números, sin puntos)
+        type: number
+      - name: precio_anterior
+        label: Precio anterior tachado (0 = sin descuento)
+        type: number
+      - name: foto
+        label: Foto
+        type: image
+      - name: descripcion
+        label: Descripción
+        type: text
+      - name: hay_stock
+        label: Hay stock
+        type: boolean
+        default: true
+      - name: ejemplo
+        label: Es un reloj de ejemplo (borrarlo al cargar los reales)
+        type: boolean
+        default: false
+
+  - name: portada
+    label: Portada (carrusel)
+    type: file
+    path: data/portada.json
+    format: json
+    list: true
+    fields:
+      - name: titulo
+        label: Título grande
+        type: string
+      - name: subtitulo
+        label: Texto chico
+        type: string
+      - name: foto
+        label: Foto (horizontal; si queda vacía se dibuja un reloj)
+        type: image
+      - name: boton
+        label: El botón "Ver modelos" lleva a
+        type: select
+        options:
+          values: [Sin botón, Todos, Citizen, Orient, Seiko, Otros]
+
+  - name: config
+    label: Datos de la tienda
+    type: file
+    path: data/config.json
+    format: json
+    fields:
+      - { name: nombre_tienda, label: Nombre de la tienda, type: string }
+      - { name: frase, label: Frase del pie de página, type: string }
+      - { name: whatsapp, label: "WhatsApp (con código de país, sin + ni espacios. Ej: 5492216231903)", type: string }
+      - { name: telefono, label: "Teléfono como se muestra (Ej: +54 9 2216 23-1903)", type: string }
+      - { name: instagram, label: Usuario de Instagram, type: string }
+      - { name: email, label: Email, type: string }
+      - { name: direccion, label: Dirección o zona, type: string }
+      - { name: horarios, label: Horarios, type: string }
+      - { name: barra_promos, label: Barra de promos (arriba), type: string, list: true }
+      - { name: franja, label: Franja verde, type: string, list: true }
+      - { name: titulo_seccion, label: Título de la sección de relojes, type: string }
+      - { name: marcas, label: Marcas (filtros y menú), type: string, list: true }
+      - { name: medios_pago, label: Medios de pago, type: string, list: true }
+      - name: beneficios
+        label: Beneficios
+        type: object
+        list: true
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: detalle, label: Detalle, type: string }
+      - { name: color_acento, label: "Color dorado de acento (Ej: #b8995a)", type: string }
+      - { name: descuento_efectivo, label: Descuento en efectivo (%), type: number }
+      - { name: descuento_transferencia, label: Descuento por transferencia (%), type: number }
+      - { name: cuotas, label: Cuotas sin interés (0 = no mostrar), type: number }
+      - { name: envio_gratis_desde, label: Envío gratis desde $ (0 = no mostrar), type: number }

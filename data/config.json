@@ -1,0 +1,50 @@
+{
+  "nombre_tienda": "WATCHES BY MARCOS",
+  "frase": "Relojes seleccionados",
+  "color_acento": "#b8995a",
+  "barra_promos": [
+    "Pagá en efectivo o por transferencia",
+    "Citizen, Orient y Seiko",
+    "Consultas por WhatsApp"
+  ],
+  "franja": [
+    "Nuevos modelos cada semana",
+    "Envíos a todo el país",
+    "Garantía en todos los relojes"
+  ],
+  "titulo_seccion": "NUEVOS INGRESOS",
+  "marcas": [
+    "Citizen",
+    "Orient",
+    "Seiko",
+    "Otros"
+  ],
+  "medios_pago": [
+    "Transferencia",
+    "Efectivo"
+  ],
+  "whatsapp": "5492216231903",
+  "telefono": "+54 9 2216 23-1903",
+  "instagram": "watchesbymarcos_",
+  "email": "",
+  "direccion": "",
+  "horarios": "",
+  "beneficios": [
+    {
+      "titulo": "Garantía",
+      "detalle": "Todos los relojes tienen garantía de funcionamiento."
+    },
+    {
+      "titulo": "Envíos a todo el país",
+      "detalle": "Despachamos en 24/48 hs hábiles."
+    },
+    {
+      "titulo": "Medios de pago",
+      "detalle": "Pagás en efectivo o por transferencia."
+    }
+  ],
+  "descuento_efectivo": 0,
+  "descuento_transferencia": 0,
+  "cuotas": 0,
+  "envio_gratis_desde": 0
+}

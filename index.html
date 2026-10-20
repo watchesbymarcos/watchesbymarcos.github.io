@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Watches by Marcos</title>
+<meta name="description" content="Relojes Citizen, Orient y Seiko. Consultas y pedidos por WhatsApp.">
+<meta property="og:title" content="Watches by Marcos">
+<meta property="og:description" content="Relojes Citizen, Orient y Seiko. Consultas y pedidos por WhatsApp.">
+<meta name="theme-color" content="#0a2c1f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a2c1f'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23b8995a' stroke-width='3.5'/%3E%3Cpath d='M25 15V8h14v7M25 49v7h14v-7' fill='none' stroke='%23b8995a' stroke-width='3'/%3E%3Cpath d='M32 32l-6-3.5M32 32l9-6' stroke='%23b8995a' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+
+/* Tienda estilo streetwear: barras negras de promos, logo centrado, hero grande con título gigante, grilla de producto densa */
+:root{
+  --ink:#111412; --paper:#ffffff; --mist:#f2efe6; --line:#e2ded3; --muted:#6b6a62;
+  --green:#0f4a32; --green-d:#0a2c1f; --cream:#f4efe2; --gold:#b8995a;
+  --accent:#b8995a; --sale:#8e2a22; --ok:#0f4a32;
+  --display:"Anton","Impact","Arial Narrow Bold",sans-serif;
+  --serif:"Cormorant Garamond","Times New Roman",serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--green-d)}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1280px;margin:0 auto}
+
+/* marquee */
+.marq{background:var(--green-d);color:var(--cream);overflow:hidden;white-space:nowrap;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.marq{position:relative}
+.marq-track{display:inline-flex;gap:0;padding-block:10px;animation:marq 38s linear infinite;animation-play-state:running;will-change:transform;transform:translate3d(0,0,0)}
+.marq-track span{padding-right:.6em}
+.marq-track span::after{content:"·";padding-left:.6em;color:var(--gold)}
+@keyframes marq{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+.band{background:var(--green);color:var(--cream);border-block:1px solid var(--gold)}
+.band .marq-track{animation-duration:30s;padding-block:12px;font-size:14px}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--paper);border-bottom:1px solid var(--line);color:var(--green-d)}
+.hbar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding-block:12px}
+.hbtn{background:none;border:0;font-size:16px;letter-spacing:.06em;text-transform:uppercase;padding:8px 0;display:inline-flex;align-items:center;gap:8px}
+.hbtn.right{justify-self:end;position:relative}
+.count{position:absolute;top:-4px;right:-14px;background:var(--green-d);color:#fff;font-size:11px;min-width:20px;height:20px;border-radius:10px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.logo{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;background:none;border:0;padding:0;color:var(--green-d)}
+.logo svg,.logo img{width:70px;height:70px;object-fit:contain}
+.logo b{font-family:var(--serif);font-weight:600;font-size:15px;letter-spacing:.24em;line-height:1}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(110% 85% at 50% 32%,#17603f 0%,var(--green) 38%,var(--green-d) 82%);color:var(--cream)}
+.slides{display:flex;transition:transform .6s cubic-bezier(.6,0,.2,1)}
+.slide{flex:0 0 100%;position:relative;aspect-ratio:4/5;max-height:760px;width:100%;display:grid;place-items:center;overflow:hidden}
+@media (min-width:800px){.slide{aspect-ratio:16/8}}
+.slide .art{position:absolute;inset:0;display:grid;place-items:center}
+.slide .art svg{height:78%;width:auto;max-width:90%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+.slide .shade{position:absolute;inset:auto 0 0;height:55%;background:linear-gradient(transparent,rgba(6,26,18,.6))}
+.slide .txt{position:absolute;left:0;right:0;bottom:0;padding-bottom:18px;text-align:center}
+.slide .sub{font-weight:600;letter-spacing:.24em;text-transform:uppercase;font-size:13px;margin-bottom:6px;color:var(--gold)}
+.slide h1{font-family:var(--display);font-weight:400;font-size:clamp(64px,17vw,220px);line-height:.86;margin:0;letter-spacing:.01em;text-wrap:balance}
+/* portada: la foto se funde con el verde */
+.slide .blur{position:absolute;inset:-60px;width:calc(100% + 120px);height:calc(100% + 120px);max-width:none;object-fit:cover;filter:blur(36px) saturate(.4) brightness(.6);opacity:.45;mix-blend-mode:luminosity}
+.slide .ph{position:absolute;left:0;top:0;width:100%;height:84%;object-fit:cover;object-position:center 42%;-webkit-mask-image:linear-gradient(#000 55%,transparent 100%);mask-image:linear-gradient(#000 55%,transparent 100%)}
+.slide .ph~.shade{height:45%;background:linear-gradient(transparent,rgba(6,26,18,.75))}
+@media (max-width:799px){.slide .art{place-items:start center;padding-top:12%}.slide .art svg{height:58%}}
+@media (min-width:800px){
+  .slide .ph{left:auto;right:0;width:60%;height:100%;object-position:center 45%;filter:brightness(.94);-webkit-mask-image:linear-gradient(90deg,transparent,#000 42%),linear-gradient(transparent,#000 14%,#000 86%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 42%),linear-gradient(transparent,#000 14%,#000 86%,transparent);mask-composite:intersect}
+  .slide .art{left:auto;right:3%;width:50%}
+  .slide .shade,.slide .ph~.shade{inset:0;height:100%;background:linear-gradient(90deg,rgba(6,26,18,.5),transparent 55%)}
+  .slide .txt{top:50%;bottom:auto;transform:translateY(-50%);right:50%;text-align:left;padding-bottom:0;padding-left:max(56px,env(safe-area-inset-left,0px))}
+  .slide h1{font-size:clamp(72px,10vw,168px)}
+}
+.harrow{position:absolute;top:16px;display:flex;gap:18px;right:max(16px,env(safe-area-inset-right,0px));z-index:3}
+.harrow button{background:none;border:0;color:var(--cream);font-size:30px;line-height:1;padding:4px}
+.hcta{margin-top:16px;background:transparent;border:1px solid var(--gold);color:var(--cream);padding:12px 24px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;min-height:44px;transition:background .2s,color .2s}
+.hcta:hover{background:var(--gold);color:var(--green-d)}
+.hero::before{content:"";position:absolute;inset:0 0 auto;height:96px;background:linear-gradient(rgba(6,26,18,.6),transparent);z-index:2;pointer-events:none}
+.hcount{position:absolute;left:0;right:0;top:16px;text-align:center;font-size:15px;letter-spacing:.1em;z-index:3;font-variant-numeric:tabular-nums}
+
+/* shop */
+.shop{padding-block:40px 24px}
+.shead{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
+.shead h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,6vw,56px);line-height:1;margin:0;letter-spacing:.01em;color:var(--green-d)}
+.search{flex:1 1 220px;max-width:340px;border:1px solid var(--ink);padding:10px 12px;font:inherit;background:var(--paper);border-radius:0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px;scrollbar-width:none}
+.chip{flex:none;border:1px solid var(--green-d);color:var(--green-d);background:var(--paper);padding:8px 14px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.chip[aria-pressed="true"]{background:var(--green-d);color:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1080px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pimg{position:relative;aspect-ratio:1/1;background:var(--mist);overflow:hidden;border:0;padding:0;width:100%;display:block}
+.pimg img,.pimg svg{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.pimg svg{object-fit:contain;padding:8%}
+.card:hover .pimg img,.card:hover .pimg svg{transform:scale(1.04)}
+.tag{position:absolute;top:8px;left:8px;background:var(--green-d);color:#fff;font-size:11px;font-weight:700;padding:4px 7px;letter-spacing:.05em}
+.tag.sale{background:var(--sale)}
+.tag.r{left:auto;right:8px;background:var(--paper);color:var(--muted);border:1px solid var(--line);font-weight:600}
+.tag.out{top:auto;bottom:8px;background:#fff;color:var(--ink);border:1px solid var(--ink)}
+.pname{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;margin:4px 0 0;line-height:1.3;overflow-wrap:anywhere}
+.price{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-variant-numeric:tabular-nums}
+.price b{font-size:17px}
+.price s{color:var(--muted);font-size:13px}
+.cash{font-size:13px;color:var(--ok);font-weight:600;font-variant-numeric:tabular-nums}
+.cuo{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.add{margin-top:4px;background:var(--green-d);color:var(--cream);border:0;padding:11px 10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.add[disabled]{background:var(--line);color:var(--muted);cursor:not-allowed}
+.empty{padding:40px 0;color:var(--muted);text-align:center}
+
+/* benefits */
+.bens{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border-block:1px solid var(--line);margin-top:30px}
+.ben{background:var(--paper);padding:24px 20px;display:flex;gap:14px;align-items:flex-start}
+.ben svg{flex:none;width:30px;height:30px;color:var(--gold)}
+.ben h3{margin:0 0 3px;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.ben p{margin:0;color:var(--muted);font-size:14px}
+
+/* footer */
+footer{background:var(--green-d);color:#d9d6cb;margin-top:0;border-top:1px solid var(--gold)}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;padding-block:44px 28px}
+footer h4{font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--gold)}
+footer p,footer li{margin:0 0 6px;font-size:14px}
+footer ul{list-style:none;padding:0;margin:0}
+footer .logo svg{width:84px;height:84px}
+footer .logo{align-items:flex-start;color:var(--gold)}
+.copy{border-top:1px solid rgba(184,153,90,.3);padding-block:16px;font-size:12px;color:#9a9a8c;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+.igb{display:inline-grid;place-items:center;flex:none;width:32px;height:32px;border-radius:9px;background:var(--green);color:var(--cream);border:1px solid rgba(184,153,90,.55);transition:background .2s,color .2s}
+.igb svg{width:18px;height:18px}
+.igl{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+.igl:hover .igb{background:var(--gold);color:var(--green-d)}
+footer li.igrow{margin:4px 0 10px}
+.menu a.igm{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.menu a.igm .igb{background:var(--green-d)}
+.msub{border-bottom:1px solid var(--line)}
+.msub>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:14px 0;font-size:16px;text-transform:uppercase;letter-spacing:.05em}
+.msub>summary::-webkit-details-marker{display:none}
+.msub>summary::after{content:"+";font-size:22px;line-height:1;color:var(--gold)}
+.msub[open]>summary::after{content:"−"}
+.menu .msub a.igm{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:10px 0 10px 16px;font-size:15px;line-height:1;border-bottom:0;border-top:1px solid var(--line)}
+.msub[open]{padding-bottom:6px}
+.adminlink{background:none;border:1px solid rgba(184,153,90,.5);color:var(--gold);padding:6px 12px;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+
+/* whatsapp */
+.wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.25);z-index:40}
+.wa svg{width:32px;height:32px}
+
+/* drawers & modal */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:70}
+.drawer{position:fixed;top:0;bottom:0;width:min(420px,100%);background:var(--paper);z-index:80;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer.l{left:0;padding-left:env(safe-area-inset-left,0px)}
+.drawer.r{right:0;padding-right:env(safe-area-inset-right,0px)}
+.drawer.wide{width:min(560px,100%)}
+.dhead{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}
+.dhead h3{margin:0;font-family:var(--display);font-weight:400;font-size:24px;letter-spacing:.03em}
+.x{background:none;border:0;font-size:26px;line-height:1;padding:4px 8px}
+.dbody{flex:1;overflow-y:auto;padding:16px 18px}
+.dfoot{border-top:1px solid var(--line);padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.menu a,.menu button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:14px 0;font-size:16px;text-transform:uppercase;letter-spacing:.05em;text-decoration:none}
+.citem{display:grid;grid-template-columns:72px 1fr auto;gap:12px;align-items:center;padding-block:12px;border-bottom:1px solid var(--line)}
+.citem .th{width:72px;height:72px;background:var(--mist);overflow:hidden}
+.citem .th img,.citem .th svg{width:100%;height:100%;object-fit:cover}
+.qty{display:inline-flex;border:1px solid var(--line);margin-top:6px}
+.qty button{background:none;border:0;width:30px;height:28px}
+.qty span{min-width:26px;text-align:center;line-height:28px;font-variant-numeric:tabular-nums}
+.tot{display:flex;justify-content:space-between;font-weight:700;font-size:17px;font-variant-numeric:tabular-nums}
+.big{background:var(--green-d);color:var(--cream);border:0;padding:15px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:center;text-decoration:none;display:block}
+.big.wa2{background:#1d8f4e}
+.ghost{background:var(--paper);border:1px solid var(--green-d);color:var(--green-d);padding:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.modal{position:fixed;z-index:80;inset:auto 0 0 0;max-height:92%;overflow-y:auto;background:var(--paper);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (min-width:860px){.modal{inset:50% auto auto 50%;transform:translate(-50%,-50%);width:min(900px,92vw);max-height:88vh}}
+.mgrid{display:grid;grid-template-columns:1fr;gap:0}
+@media (min-width:860px){.mgrid{grid-template-columns:1fr 1fr}}
+.mimg{background:var(--mist);aspect-ratio:1/1}
+.mimg img,.mimg svg{width:100%;height:100%;object-fit:cover}
+.mimg svg{object-fit:contain;padding:10%}
+.minfo{padding:22px 20px;display:flex;flex-direction:column;gap:10px;position:relative;min-width:0}
+.minfo h2{font-family:var(--display);font-weight:400;font-size:34px;line-height:1.02;margin:0;letter-spacing:.01em;text-wrap:balance;color:var(--green-d)}
+.minfo .x{position:absolute;top:10px;right:10px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.desc{color:#3a3834;white-space:pre-line}
+.paylist{border-top:1px solid var(--line);padding-top:10px;font-size:14px;display:grid;gap:4px}
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--green-d);color:var(--cream);padding:12px 18px;font-size:14px;z-index:95;max-width:calc(100% - 32px)}
+
+/* admin */
+.tabs{display:flex;gap:0;overflow-x:auto;border-bottom:1px solid var(--line);padding:0 10px;scrollbar-width:none}
+.tabs button{flex:none;background:none;border:0;border-bottom:3px solid transparent;padding:12px 10px;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--accent)}
+.fld{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+.fld label{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.fld small{color:var(--muted);font-size:12px}
+.fld input,.fld textarea,.fld select{font:inherit;border:1px solid #c9c6bf;padding:9px 10px;background:#fff;border-radius:0;width:100%;min-width:0}
+.fld textarea{min-height:90px;resize:vertical}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.note{background:var(--mist);border-left:3px solid var(--accent);padding:10px 12px;font-size:13px;margin-bottom:14px}
+.item{border:1px solid var(--line);margin-bottom:10px}
+.item>summary{list-style:none;display:grid;grid-template-columns:48px 1fr auto;gap:10px;align-items:center;padding:8px 10px;cursor:pointer}
+.item>summary::-webkit-details-marker{display:none}
+.item .th{width:48px;height:48px;background:var(--mist);overflow:hidden}
+.item .th img,.item .th svg{width:100%;height:100%;object-fit:cover}
+.item .ib{padding:12px 10px 4px;border-top:1px solid var(--line)}
+.item .nm{font-weight:700;font-size:13px;text-transform:uppercase;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.item .mt{font-size:12px;color:var(--muted)}
+.iact{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.mini{background:#fff;border:1px solid #c9c6bf;padding:6px 10px;font-size:12px;font-weight:600}
+.mini.del{color:var(--sale);border-color:var(--sale)}
+.status{font-size:13px;min-height:1.2em}
+.status.err{color:var(--sale)}
+.status.ok{color:var(--ok)}
+/* móviles (Android / iOS) */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+button,a,summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+input,select,textarea,.search{font-size:16px!important}
+.qty button{width:40px;height:38px;font-size:18px}
+.qty span{line-height:38px}
+.x{min-width:44px;min-height:44px}
+.drawer{height:100%;height:100dvh;overscroll-behavior:contain}
+.dbody,.modal{-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+@media (hover:none){.card:hover .pimg img,.card:hover .pimg svg{transform:none}}
+@media (max-width:420px){.hbtn{font-size:14px;gap:6px}.logo svg,.logo img{width:58px;height:58px}.logo b{font-size:12px;letter-spacing:.18em}.price b{font-size:15px}.add{padding:12px 6px;font-size:11px}}
+/* portada minimalista */
+.hero{background:var(--green-d)}
+.hero::before,.slide .blur,.slide .shade,.hcount,.harrow{display:none}
+.slide .sub{font-size:11px;letter-spacing:.32em;margin-bottom:12px}
+.slide h1{font-size:clamp(52px,14vw,96px);line-height:.9}
+.slide .txt{padding-bottom:44px}
+.hcta{margin-top:22px;background:none;border:0;border-bottom:1px solid var(--gold);padding:8px 0;min-height:0;font-size:12px;letter-spacing:.2em}
+.hcta::after{content:"\00a0\00a0\2192"}
+.hcta:hover{background:none;color:var(--gold)}
+.hdots{position:absolute;z-index:3;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:10px}
+.hdots button{position:relative;width:24px;height:2px;padding:0;border:0;background:rgba(244,239,226,.3);transition:background .3s,width .3s}
+.hdots button::before{content:"";position:absolute;inset:-12px -4px}
+.hdots button[aria-current="true"]{background:var(--gold);width:36px}
+@media (min-width:800px){
+  .slide .ph{width:55%;filter:none}
+  .slide .txt{padding-bottom:0}
+  .slide h1{font-size:clamp(56px,7vw,112px)}
+  .hdots{left:max(56px,env(safe-area-inset-left,0px));right:auto;bottom:32px;justify-content:flex-start}
+}
+@media (prefers-reduced-motion:reduce){.marq-track{animation-duration:70s}.band .marq-track{animation-duration:60s}.slides{transition:none}}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+(function(){
+"use strict";
+var S = {brand:{name:"WATCHES BY MARCOS",tagline:"",logo:null,accent:"#b8995a"},promos:[],band:[],hero:[],pay:{methods:[],cash:0,transfer:0,cuotas:0,freeShip:0},contact:{},benefits:[],sectionTitle:"",categories:[],products:[]};
+var view = {cat:"Todos", q:"", slide:0};
+var cart = [];
+try { cart = JSON.parse(localStorage.getItem("wbm-cart") || "[]") || []; } catch(e) { cart = []; }
+var canEdit = false, dirty = false, adminOpen = false;
+function adminWarn(){}
+function openAdmin(){}
+
+function $(s, r){ return (r||document).querySelector(s); }
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function money(n){ return "$" + Number(n||0).toLocaleString("es-AR", {minimumFractionDigits:0, maximumFractionDigits:0}); }
+function money2(n){ return "$" + Number(n||0).toLocaleString("es-AR", {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function uid(){ return "p" + Math.random().toString(36).slice(2,9); }
+function saveCart(){ try { localStorage.setItem("wbm-cart", JSON.stringify(cart)); } catch(e){} }
+function waNum(){ return String(S.contact.whatsapp||"").replace(/\D/g,""); }
+function waLink(text){ var n = waNum(); return "https://wa.me/" + n + (text ? "?text=" + encodeURIComponent(text) : ""); }
+function igLink(){ var h = String(S.contact.instagram||"").replace(/^@/,"").trim(); return h ? "https://www.instagram.com/" + encodeURIComponent(h) + "/" : ""; }
+
+/* ---------- watch drawings ---------- */
+function shade(hex, amt){
+  var h = String(hex||"#888").replace("#",""); if (h.length===3) h = h.split("").map(function(c){return c+c;}).join("");
+  var n = parseInt(h,16); if (isNaN(n)) n = 0x888888;
+  var r=(n>>16)&255,g=(n>>8)&255,b=n&255;
+  function f(v){ return Math.max(0,Math.min(255,Math.round(amt<0? v*(1+amt) : v+(255-v)*amt))); }
+  return "#" + [f(r),f(g),f(b)].map(function(v){return v.toString(16).padStart(2,"0");}).join("");
+}
+function lum(hex){ var h=String(hex||"#000").replace("#",""); var n=parseInt(h.length===3?h.split("").map(function(c){return c+c;}).join(""):h,16)||0; return (0.299*((n>>16)&255)+0.587*((n>>8)&255)+0.114*(n&255))/255; }
+function watchSVG(o){
+  o = o || {};
+  var dial = o.dial || "#111", strap = o.strap || "#222", caseC = o.gold ? "#c9a24d" : (o.caseC || "#b9bcc0");
+  if (/^#(c9a24d|d8c393)$/i.test(strap)) caseC = "#c9a24d";
+  var mark = lum(dial) > 0.6 ? "#1a1a1a" : "#f2efe8";
+  var live = o.live ? ' class="live"' : "";
+  var idx = "";
+  for (var i=0;i<12;i++){
+    var a = i*30, big = i%3===0;
+    idx += '<rect x="'+(big?97:98.5)+'" y="'+(big?72:74)+'" width="'+(big?6:3)+'" height="'+(big?14:9)+'" rx="1" fill="'+mark+'" transform="rotate('+a+' 100 130)"/>';
+  }
+  var chrono = "";
+  if (o.chrono){
+    var sub = lum(dial) > 0.6 ? "#1a1a1a" : shade(dial,0.18);
+    [[78,130],[122,130],[100,153]].forEach(function(p){ chrono += '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="11" fill="'+sub+'" stroke="'+mark+'" stroke-width=".6" opacity=".95"/><line x1="'+p[0]+'" y1="'+p[1]+'" x2="'+p[0]+'" y2="'+(p[1]-8)+'" stroke="'+(lum(sub)>.5?"#111":"#eee")+'" stroke-width="1.2"/>'; });
+  }
+  return '<svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Reloj"'+live+'>'+
+    '<path d="M70 0h60l6 66H64z" fill="'+strap+'"/><path d="M64 194h72l-6 66H70z" fill="'+strap+'"/>'+
+    '<path d="M70 0h60l6 66H64z" fill="url(#g0)" opacity=".25"/>'+
+    '<defs><linearGradient id="g0" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>'+
+    '<radialGradient id="gl" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>'+
+    '<rect x="160" y="121" width="12" height="18" rx="3" fill="'+shade(caseC,-0.15)+'"/>'+
+    '<circle cx="100" cy="130" r="68" fill="'+shade(caseC,-0.25)+'"/><circle cx="100" cy="130" r="64" fill="'+caseC+'"/>'+
+    '<circle cx="100" cy="130" r="58" fill="'+(o.bezel || shade(dial,-0.35))+'"/>'+
+    '<circle cx="100" cy="130" r="50" fill="'+dial+'"/>'+ idx + chrono +
+    '<g class="hh" transform="rotate(305 100 130)"><rect x="97" y="96" width="6" height="38" rx="3" fill="'+mark+'"/></g>'+
+    '<g class="mh" transform="rotate(60 100 130)"><rect x="98" y="84" width="4" height="50" rx="2" fill="'+mark+'"/></g>'+
+    '<g class="sh" transform="rotate(180 100 130)"><rect x="99.3" y="82" width="1.4" height="58" fill="'+(o.secC||"#c0392b")+'"/></g>'+
+    '<circle cx="100" cy="130" r="3.5" fill="'+mark+'"/><circle cx="100" cy="130" r="50" fill="url(#gl)"/></svg>';
+}
+var LOGO_SVG = (function(){
+  var s = '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">';
+  function row(y, sw){
+    var cw = 9, h = 3.8;
+    return '<rect x="'+(50-cw/2)+'" y="'+y+'" width="'+cw+'" height="'+h+'" rx="1" stroke-width="1"/>'+
+      '<rect x="'+(50-cw/2-1.2-sw)+'" y="'+y+'" width="'+sw+'" height="'+h+'" rx="1" fill="currentColor" stroke="none"/>'+
+      '<rect x="'+(50+cw/2+1.2)+'" y="'+y+'" width="'+sw+'" height="'+h+'" rx="1" fill="currentColor" stroke="none"/>';
+  }
+  [[1,10],[5.6,10.5],[10.2,11],[14.8,11.5]].forEach(function(r){ s += row(r[0], r[1]); s += row(100-r[0]-3.8, r[1]); });
+  s += '<g fill="currentColor" stroke="none"><path d="M30 19.5H36V24.6A29 29 0 0 0 30 29Z"/><path d="M70 19.5H64V24.6A29 29 0 0 1 70 29Z"/><path d="M30 80.5H36V75.4A29 29 0 0 1 30 71Z"/><path d="M70 80.5H64V75.4A29 29 0 0 0 70 71Z"/></g>';
+  s += '<circle cx="50" cy="50" r="29" stroke-width="2.2"/><circle cx="50" cy="50" r="23" stroke-width=".9"/>';
+  for (var i = 0; i < 60; i++) s += '<line x1="50" y1="23.7" x2="50" y2="26.6" stroke-width="'+(i%5===0?1.1:.6)+'" transform="rotate('+(i*6)+' 50 50)"/>';
+  s += '<g fill="currentColor" stroke="none">';
+  for (var j = 1; j < 12; j++) s += '<rect x="49.1" y="30.5" width="1.8" height="'+(j%3===0?5:4)+'" rx=".5" transform="rotate('+(j*30)+' 50 50)"/>';
+  s += '<rect x="47.4" y="30.5" width="1.6" height="5" rx=".5"/><rect x="51" y="30.5" width="1.6" height="5" rx=".5"/></g>';
+  function hand(L, a){
+    var t = ' transform="translate(50 50) rotate('+a+')"';
+    return '<path d="M0 '+(-L)+'L-1.9 -1.5 0 3Z" fill="currentColor" stroke="none"'+t+'/><path d="M0 '+(-L)+'L1.9 -1.5 0 3 -1.9 -1.5Z" stroke-width=".8"'+t+'/>';
+  }
+  s += hand(11.5, 305) + hand(18, 60);
+  s += '<path d="M50 55V30.5" stroke-width=".6" transform="rotate(192 50 50)"/><circle cx="50" cy="50" r="1.8" fill="currentColor" stroke="none"/>';
+  s += '<rect x="79" y="48.2" width="1.8" height="3.6" fill="currentColor" stroke="none"/><rect x="80.6" y="46" width="4.4" height="8" rx="1.2" stroke-width="1"/><path d="M82.1 47v6M83.5 47v6" stroke-width=".6"/>';
+  return s + '</svg>';
+})();
+var IG_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.2" cy="6.8" r="1.05" fill="currentColor" stroke="none"/></svg>';
+function igBadge(){ return '<span class="igb">'+IG_SVG+'</span>'; }
+var WA_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.3a8.7 8.7 0 0 0-7.5 13.1L3.4 20.6l4.3-1.1A8.7 8.7 0 1 0 12 3.3z"/><path d="M9.3 8.2c.3-.4.7-.4 1 0l.8 1.4c.2.3.1.7-.2.9l-.5.4c.5 1.1 1.4 2 2.5 2.5l.4-.5c.2-.3.6-.4.9-.2l1.4.8c.4.3.4.7 0 1-.6.7-1.5 1-2.4.7a7.5 7.5 0 0 1-4.6-4.6c-.3-.9 0-1.8.7-2.4z" fill="currentColor" stroke="none"/></svg>';
+function waBadge(){ return '<span class="igb">'+WA_SVG+'</span>'; }
+function phoneLabel(){ return S.contact.phone || ("+" + waNum()); }
+function logoHTML(){ return S.brand.logo ? '<img src="'+esc(S.brand.logo)+'" alt="">' : LOGO_SVG; }
+function pImg(p){ return p.image ? '<img src="'+esc(p.image)+'" alt="'+esc(p.name)+'" loading="lazy">' : watchSVG({dial:p.dial, strap:p.strap, chrono:p.chrono}); }
+
+/* ---------- pricing ---------- */
+function cashPrice(p){ return p.price * (1 - (Number(S.pay.cash)||0)/100); }
+function off(p){ return p.compare && p.compare > p.price ? Math.round((1 - p.price/p.compare)*100) : 0; }
+
+/* ---------- shell ---------- */
+function shell(){
+  $("#root").innerHTML =
+  '<div class="marq" id="promo"></div>'+
+  '<header class="top"><div class="wrap gut hbar">'+
+    '<button class="hbtn" id="bMenu" aria-label="Abrir menú"><svg width="18" height="14" viewBox="0 0 18 14"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="2"/></svg><span>Menú</span></button>'+
+    '<button class="logo" id="bLogo" aria-label="Inicio"></button>'+
+    '<button class="hbtn right" id="bCart">Carrito<span class="count" id="cCount">0</span></button>'+
+  '</div></header>'+
+  '<section class="hero" id="hero" aria-label="Portada"></section>'+
+  '<div class="marq band" id="band"></div>'+
+  '<main class="wrap gut shop" id="shop">'+
+    '<div class="shead"><h2 id="secTitle"></h2><input class="search" id="q" type="search" placeholder="Buscar reloj" aria-label="Buscar reloj"></div>'+
+    '<div class="chips" id="chips" role="group" aria-label="Marcas"></div>'+
+    '<div class="grid" id="grid"></div>'+
+  '</main>'+
+  '<section class="bens" id="bens"></section>'+
+  '<footer><div class="wrap gut fgrid" id="foot"></div><div class="wrap gut copy" id="copy"></div></footer>'+
+  '<a class="wa" id="waFab" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.9.8a3.3 3.3 0 0 0 2.2-1.6 2.7 2.7 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg></a>'+
+  '<div id="layer"></div>';
+  $("#bMenu").onclick = openMenu;
+  $("#bCart").onclick = openCart;
+  $("#bLogo").onclick = function(){ window.scrollTo({top:0,behavior:"smooth"}); };
+  $("#q").oninput = function(e){ view.q = e.target.value; renderGrid(); };
+}
+
+function marq(el, items){
+  var seq = (items||[]).filter(Boolean).map(function(t){ return "<span>"+esc(String(t).toUpperCase())+"</span>"; }).join("");
+  if (!seq){ el.hidden = true; return; }
+  el.hidden = false;
+  var rep = ""; for (var i=0;i<6;i++) rep += seq;
+  el.innerHTML = '<div class="marq-track" aria-hidden="true">'+rep+rep+'</div><span style="position:absolute;left:-9999px">'+esc(items.join(" · "))+'</span>';
+}
+
+function renderHero(){
+  var h = $("#hero"), sl = S.hero || [];
+  if (!sl.length){ h.hidden = true; return; }
+  h.hidden = false;
+  view.slide = Math.min(view.slide, sl.length-1);
+  h.innerHTML = '<div class="slides" id="slides">' + sl.map(function(s){
+    var bg = s.image ? '<img class="blur" src="'+esc(s.image)+'" alt="" aria-hidden="true"><img class="ph" src="'+esc(s.image)+'" alt="'+esc(s.title)+'">' : '<div class="art">'+watchSVG({dial:s.dial||"#111", strap:"#1c1c1c", live:true, caseC:"#c7cacd"})+'</div>';
+    return '<div class="slide">'+bg+'<div class="shade"></div><div class="txt gut"><div class="sub">'+esc(s.subtitle)+'</div><h1>'+esc(s.title)+'</h1>'+(s.link ? '<button class="hcta" data-hl="'+esc(s.link)+'">Ver modelos</button>' : '')+'</div></div>';
+  }).join("") + '</div>' +
+  (sl.length>1 ? '<div class="hdots" id="hc">'+sl.map(function(_,i){ return '<button data-dot="'+i+'" aria-label="Portada '+(i+1)+'"></button>'; }).join("")+'</div><div class="harrow"><button id="hPrev" aria-label="Anterior">&larr;</button><button id="hNext" aria-label="Siguiente">&rarr;</button></div>' : "");
+  if (sl.length>1){
+    $("#hPrev").onclick = function(){ go(view.slide-1); };
+    $("#hNext").onclick = function(){ go(view.slide+1); };
+    h.querySelectorAll("[data-dot]").forEach(function(d){ d.onclick = function(){ go(+d.dataset.dot); lastSwipe = Date.now(); }; });
+  }
+  h.querySelectorAll("[data-hl]").forEach(function(b){ b.onclick = function(){ view.cat = b.dataset.hl; renderChips(); renderGrid(); $("#shop").scrollIntoView({behavior:"smooth"}); }; });
+  go(view.slide); tick();
+}
+var lastSwipe = 0;
+(function(){
+  var x0 = null, y0 = 0;
+  document.addEventListener("touchstart", function(e){ if (!e.target.closest || !e.target.closest("#hero")) { x0 = null; return; } x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, {passive:true});
+  document.addEventListener("touchend", function(e){ if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null; if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) { go(view.slide + (dx < 0 ? 1 : -1)); lastSwipe = Date.now(); } }, {passive:true});
+})();
+function go(i){
+  var n = (S.hero||[]).length; if (!n) return;
+  view.slide = (i+n)%n;
+  var el = $("#slides"); if (el) el.style.transform = "translateX(-"+(view.slide*100)+"%)";
+  document.querySelectorAll("[data-dot]").forEach(function(d){ d.setAttribute("aria-current", +d.dataset.dot === view.slide ? "true" : "false"); });
+}
+function tick(){
+  var d = new Date(), s = d.getSeconds(), m = d.getMinutes()+s/60, hr = (d.getHours()%12)+m/60;
+  document.querySelectorAll("svg.live").forEach(function(svg){
+    svg.querySelector(".hh").setAttribute("transform","rotate("+(hr*30)+" 100 130)");
+    svg.querySelector(".mh").setAttribute("transform","rotate("+(m*6)+" 100 130)");
+    svg.querySelector(".sh").setAttribute("transform","rotate("+(s*6)+" 100 130)");
+  });
+}
+
+function filtered(){
+  var q = view.q.trim().toLowerCase();
+  return S.products.filter(function(p){
+    return (view.cat==="Todos" || p.cat===view.cat) && (!q || (p.name+" "+p.cat+" "+(p.desc||"")).toLowerCase().indexOf(q) > -1);
+  });
+}
+function renderChips(){
+  var cats = ["Todos"].concat(S.categories||[]);
+  if (cats.indexOf(view.cat) < 0) view.cat = "Todos";
+  $("#chips").innerHTML = cats.map(function(c){ return '<button class="chip" data-c="'+esc(c)+'" aria-pressed="'+(c===view.cat)+'">'+esc(c)+'</button>'; }).join("");
+  $("#chips").querySelectorAll(".chip").forEach(function(b){ b.onclick = function(){ view.cat = b.dataset.c; renderChips(); renderGrid(); }; });
+}
+function cardHTML(p){
+  var o = off(p), n = Number(S.pay.cuotas)||0;
+  return '<article class="card">'+
+    '<button class="pimg" data-open="'+esc(p.id)+'" aria-label="Ver '+esc(p.name)+'">'+pImg(p)+
+      (o ? '<span class="tag sale">-'+o+'% OFF</span>' : '')+
+      (p.example ? '<span class="tag r">Ejemplo</span>' : '')+
+      (!p.stock ? '<span class="tag out">Sin stock</span>' : '')+
+    '</button>'+
+    '<h3 class="pname">'+esc(p.name)+'</h3>'+
+    '<div class="price"><b>'+money(p.price)+'</b>'+(o ? '<s>'+money(p.compare)+'</s>' : '')+'</div>'+
+    (S.pay.cash ? '<div class="cash">'+money(cashPrice(p))+' en efectivo</div>' : '')+
+    (n>1 ? '<div class="cuo">'+n+' x '+money2(p.price/n)+' sin interés</div>' : '')+
+    '<button class="add" data-add="'+esc(p.id)+'"'+(p.stock?'':' disabled')+'>'+(p.stock?'Agregar al carrito':'Sin stock')+'</button>'+
+  '</article>';
+}
+function renderGrid(){
+  var list = filtered(), g = $("#grid");
+  g.innerHTML = list.length ? list.map(cardHTML).join("") : '<p class="empty">No hay relojes para mostrar con ese filtro.</p>';
+  g.querySelectorAll("[data-open]").forEach(function(b){ b.onclick = function(){ openProduct(b.dataset.open); }; });
+  g.querySelectorAll("[data-add]").forEach(function(b){ b.onclick = function(){ addToCart(b.dataset.add); }; });
+}
+var BEN_ICONS = [
+  '<svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3l10 4v7c0 6-4.3 10.6-10 13-5.7-2.4-10-7-10-13V7z"/><path d="M10 15l3.5 3.5L20 12"/></svg>',
+  '<svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h16v12H2zM18 12h6l4 4v4h-10z"/><circle cx="7" cy="22" r="2.5"/><circle cx="23" cy="22" r="2.5"/></svg>',
+  '<svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="24" height="16" rx="2"/><path d="M3 12h24M7 18h6"/></svg>'
+];
+function renderRest(){
+  document.documentElement.style.setProperty("--accent", S.brand.accent || "#9c7a46");
+  $("#bLogo").innerHTML = logoHTML() + "<b>"+esc(S.brand.name)+"</b>";
+  marq($("#promo"), S.promos); marq($("#band"), S.band);
+  $("#secTitle").textContent = S.sectionTitle || "Productos";
+  $("#bens").innerHTML = (S.benefits||[]).filter(function(b){return b.t;}).map(function(b,i){ return '<div class="ben">'+BEN_ICONS[i%3]+'<div><h3>'+esc(b.t)+'</h3><p>'+esc(b.d)+'</p></div></div>'; }).join("");
+  var c = S.contact, ig = igLink(), wn = waNum();
+  $("#foot").innerHTML =
+    '<div><div class="logo">'+logoHTML()+'</div><h4 style="margin-top:12px">'+esc(S.brand.name)+'</h4><p>'+esc(S.brand.tagline)+'</p></div>'+
+    '<div><h4>Marcas</h4><ul>'+(S.categories||[]).map(function(x){ return '<li><a href="#shop" data-fc="'+esc(x)+'">'+esc(x)+'</a></li>'; }).join("")+'</ul></div>'+
+    '<div><h4>Contacto</h4><ul>'+
+      (ig ? '<li class="igrow"><a class="igl" href="'+esc(ig)+'" target="_blank" rel="noopener" aria-label="Instagram @'+esc(String(c.instagram).replace(/^@/,""))+'"><span>@'+esc(String(c.instagram).replace(/^@/,""))+'</span>'+igBadge()+'</a></li>' : '')+
+      (wn ? '<li class="igrow"><a class="igl" href="'+esc(waLink("Hola! Vengo de la web."))+'" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp al '+esc(phoneLabel())+'"><span>'+esc(phoneLabel())+'</span>'+waBadge()+'</a></li>' : '')+
+      (c.email ? '<li>Email: <span style="user-select:all">'+esc(c.email)+'</span></li>' : '')+
+      (c.address ? '<li>'+esc(c.address)+'</li>' : '')+
+      (c.hours ? '<li>'+esc(c.hours)+'</li>' : '')+
+    '</ul></div>'+
+    '<div><h4>Medios de pago</h4><ul>'+
+      (S.pay.methods||[]).map(function(m){ return '<li>'+esc(m)+'</li>'; }).join("")+
+      (S.pay.cuotas>1 ? '<li>Hasta '+esc(S.pay.cuotas)+' cuotas sin interés</li>' : '')+
+      (S.pay.cash ? '<li>'+esc(S.pay.cash)+'% off en efectivo</li>' : '')+
+      (S.pay.transfer ? '<li>'+esc(S.pay.transfer)+'% off con transferencia</li>' : '')+
+      (S.pay.freeShip ? '<li>Envío gratis desde '+money(S.pay.freeShip)+'</li>' : '')+
+    '</ul></div>';
+  $("#foot").querySelectorAll("[data-fc]").forEach(function(a){ a.onclick = function(){ view.cat = a.dataset.fc; renderChips(); renderGrid(); }; });
+  $("#copy").innerHTML = '<span>© '+new Date().getFullYear()+' '+esc(S.brand.name)+'. Todos los derechos reservados.</span>' + (canEdit ? '<button class="adminlink" id="bAdmin">Administrar tienda</button>' : '');
+  if (canEdit) $("#bAdmin").onclick = openAdmin;
+  var fab = $("#waFab"); fab.hidden = !wn; fab.href = waLink("Hola! Vengo de la web y quería consultar por un reloj.");
+  document.title = S.brand.name;
+  updateCount();
+}
+function renderAll(){ renderRest(); renderHero(); renderChips(); renderGrid(); }
+
+/* ---------- layers ---------- */
+function layer(html){
+  var L = $("#layer"); L.innerHTML = '<div class="scrim" id="scrim"></div>' + html;
+  $("#scrim").onclick = closeLayer;
+  document.body.style.overflow = "hidden";
+  var x = L.querySelector(".x"); if (x) { x.onclick = closeLayer; x.focus(); }
+}
+function closeLayer(){
+  if (adminOpen && dirty){ adminWarn(); return; }
+  $("#layer").innerHTML = ""; document.body.style.overflow = ""; adminOpen = false;
+}
+document.addEventListener("keydown", function(e){ if (e.key==="Escape" && $("#layer") && $("#layer").innerHTML) closeLayer(); });
+function toast(t){ var d = document.createElement("div"); d.className="toast"; d.setAttribute("role","status"); d.textContent=t; document.body.appendChild(d); setTimeout(function(){ d.remove(); }, 2200); }
+
+function openMenu(){
+  layer('<aside class="drawer l" role="dialog" aria-label="Menú"><div class="dhead"><h3>Menú</h3><button class="x" aria-label="Cerrar">&times;</button></div><nav class="dbody menu">'+
+    '<button data-mc="Todos">Todos los relojes</button>'+(S.categories||[]).map(function(c){ return '<button data-mc="'+esc(c)+'">'+esc(c)+'</button>'; }).join("")+
+    ((igLink() || waNum()) ? '<details class="msub"><summary>Contacto</summary>'+
+      (igLink() ? '<a class="igm" href="'+esc(igLink())+'" target="_blank" rel="noopener"><span>Instagram</span>'+igBadge()+'</a>' : '')+
+      (waNum() ? '<a class="igm" href="'+esc(waLink("Hola! Vengo de la web."))+'" target="_blank" rel="noopener"><span>WhatsApp</span>'+waBadge()+'</a>' : '')+
+    '</details>' : '')+
+    (canEdit ? '<button id="mAdmin">Administrar tienda</button>' : '')+
+  '</nav></aside>');
+  document.querySelectorAll("[data-mc]").forEach(function(b){ b.onclick = function(){ view.cat = b.dataset.mc; closeLayer(); renderChips(); renderGrid(); $("#shop").scrollIntoView({behavior:"smooth"}); }; });
+  if (canEdit) $("#mAdmin").onclick = function(){ closeLayer(); openAdmin(); };
+}
+
+function openProduct(id){
+  var p = S.products.find(function(x){ return x.id===id; }); if (!p) return;
+  var o = off(p), n = Number(S.pay.cuotas)||0;
+  layer('<div class="modal" role="dialog" aria-label="'+esc(p.name)+'"><div class="mgrid"><div class="mimg">'+pImg(p)+'</div><div class="minfo"><button class="x" aria-label="Cerrar">&times;</button>'+
+    '<div class="kicker">'+esc(p.cat)+(p.example?' · Ejemplo':'')+'</div><h2>'+esc(p.name)+'</h2>'+
+    '<div class="price"><b style="font-size:24px">'+money(p.price)+'</b>'+(o?'<s>'+money(p.compare)+'</s> <span class="tag sale" style="position:static">-'+o+'% OFF</span>':'')+'</div>'+
+    '<div class="paylist">'+
+      ((S.pay.methods||[]).length ? '<div>Pagás con '+esc(S.pay.methods.join(" o ").toLowerCase())+'.</div>' : '')+
+      (S.pay.cash ? '<div class="cash">'+money(cashPrice(p))+' pagando en efectivo ('+esc(S.pay.cash)+'% off)</div>' : '')+
+      (S.pay.transfer ? '<div>'+money(p.price*(1-S.pay.transfer/100))+' con transferencia ('+esc(S.pay.transfer)+'% off)</div>' : '')+
+      (n>1 ? '<div class="cuo" style="font-size:14px">'+n+' cuotas sin interés de '+money2(p.price/n)+'</div>' : '')+
+      (S.pay.freeShip ? '<div class="cuo" style="font-size:14px">Envío gratis superando '+money(S.pay.freeShip)+'</div>' : '')+
+    '</div>'+
+    (p.desc ? '<p class="desc">'+esc(p.desc)+'</p>' : '')+
+    '<button class="big" id="mAdd"'+(p.stock?'':' disabled style="background:var(--line);color:var(--muted)"')+'>'+(p.stock?'Agregar al carrito':'Sin stock')+'</button>'+
+    (waNum() ? '<a class="big wa2" target="_blank" rel="noopener" href="'+esc(waLink("Hola! Quería consultar por el "+p.name+" ("+money(p.price)+")."))+'">Consultar por WhatsApp</a>' : '')+
+  '</div></div></div>');
+  if (p.stock) $("#mAdd").onclick = function(){ addToCart(p.id); closeLayer(); };
+}
+
+/* ---------- cart ---------- */
+function cartItems(){ return cart.map(function(c){ return {c:c, p:S.products.find(function(x){ return x.id===c.id; })}; }).filter(function(x){ return x.p; }); }
+function updateCount(){ var n = cartItems().reduce(function(a,x){ return a + x.c.q; }, 0); $("#cCount").textContent = n; }
+function addToCart(id){
+  var c = cart.find(function(x){ return x.id===id; });
+  if (c) c.q++; else cart.push({id:id, q:1});
+  saveCart(); updateCount(); toast("Agregado al carrito");
+}
+function openCart(){
+  var items = cartItems(), total = items.reduce(function(a,x){ return a + x.p.price*x.c.q; }, 0);
+  var fs = Number(S.pay.freeShip)||0;
+  var body = items.length ? items.map(function(x){
+    return '<div class="citem"><div class="th">'+pImg(x.p)+'</div><div style="min-width:0"><div class="pname" style="margin:0">'+esc(x.p.name)+'</div><div class="cuo">'+money(x.p.price)+'</div>'+
+      '<div class="qty"><button data-dq="'+esc(x.p.id)+'" aria-label="Restar">−</button><span>'+x.c.q+'</span><button data-iq="'+esc(x.p.id)+'" aria-label="Sumar">+</button></div></div>'+
+      '<b style="font-variant-numeric:tabular-nums">'+money(x.p.price*x.c.q)+'</b></div>';
+  }).join("") : '<p class="empty">El carrito está vacío.</p>';
+  var shipMsg = !items.length || !fs ? "" : (total >= fs ? '<div class="cash">¡Tenés envío gratis!</div>' : '<div class="cuo" style="font-size:14px">Te faltan '+money(fs-total)+' para el envío gratis.</div>');
+  var msg = "Hola! Quiero hacer este pedido:\n" + items.map(function(x){ return "• "+x.c.q+" x "+x.p.name+" ("+money(x.p.price)+")"; }).join("\n") + "\nTotal: "+money(total);
+  layer('<aside class="drawer r" role="dialog" aria-label="Carrito"><div class="dhead"><h3>Carrito</h3><button class="x" aria-label="Cerrar">&times;</button></div><div class="dbody">'+body+'</div>'+
+    (items.length ? '<div class="dfoot">'+shipMsg+'<div class="tot"><span>Total</span><span>'+money(total)+'</span></div>'+
+      (S.pay.cash ? '<div class="cash">'+money(total*(1-S.pay.cash/100))+' pagando en efectivo</div>' : '')+
+      (waNum() ? '<a class="big wa2" target="_blank" rel="noopener" href="'+esc(waLink(msg))+'">Enviar pedido por WhatsApp</a>' : '<p class="cuo">Para cerrar el pedido, escribinos por Instagram.</p>')+
+      '<button class="ghost" id="cClear">Vaciar carrito</button></div>' : '')+
+  '</aside>');
+  document.querySelectorAll("[data-iq],[data-dq]").forEach(function(b){ b.onclick = function(){
+    var id = b.dataset.iq || b.dataset.dq, c = cart.find(function(x){ return x.id===id; }); if (!c) return;
+    c.q += b.dataset.iq ? 1 : -1; if (c.q<=0) cart = cart.filter(function(x){ return x!==c; });
+    saveCart(); updateCount(); openCart();
+  }; });
+  var cl = $("#cClear"); if (cl) cl.onclick = function(){ cart = []; saveCart(); updateCount(); openCart(); };
+}
+
+/* ---------- datos (los edita Marcos desde Pages CMS) ---------- */
+var DIALS = [["#101418","#9aa0a6"],["#1d3d6b","#9aa0a6"],["#efe7d4","#6b4529"],["#2f4a32","#5b5a3e"],["#d8c393","#c9a24d"],["#0e0e0e","#222222"],["#344a2a","#9aa0a6"],["#f4f4f2","#1b1b1b"]];
+function num(v){ var n = Number(String(v == null ? "" : v).replace(/[^\d.,-]/g,"").replace(/\./g,"").replace(",", ".")); return isFinite(n) ? n : 0; }
+function list(v){ return Array.isArray(v) ? v.filter(function(x){ return x != null && String(x).trim() !== ""; }) : []; }
+function fromFiles(c, prods, hero){
+  c = c || {};
+  var marcas = list(c.marcas);
+  return {
+    brand:{name:c.nombre_tienda || "WATCHES BY MARCOS", tagline:c.frase || "", logo:null, accent:c.color_acento || "#b8995a"},
+    promos:list(c.barra_promos), band:list(c.franja),
+    hero:(hero||[]).filter(function(h){ return h && (h.titulo || h.foto); }).map(function(h, i){
+      var b = h.boton || ""; if (b === "Sin botón") b = "";
+      return {title:h.titulo || "", subtitle:h.subtitulo || "", image:h.foto || null, dial:["#3f5a3a","#ece6d8","#1d3d6b","#14181d"][i%4], link:b};
+    }),
+    pay:{methods:list(c.medios_pago), cash:num(c.descuento_efectivo), transfer:num(c.descuento_transferencia), cuotas:num(c.cuotas), freeShip:num(c.envio_gratis_desde)},
+    contact:{whatsapp:c.whatsapp || "", phone:c.telefono || "", instagram:c.instagram || "", email:c.email || "", address:c.direccion || "", hours:c.horarios || ""},
+    benefits:(c.beneficios||[]).map(function(b){ return {t:(b&&b.titulo)||"", d:(b&&b.detalle)||""}; }),
+    sectionTitle:c.titulo_seccion || "RELOJES", categories:marcas,
+    products:(prods||[]).filter(function(p){ return p && p.nombre; }).map(function(p, i){
+      var d = DIALS[i % DIALS.length];
+      return {id:"p"+i, name:p.nombre, cat:p.marca || "Otros", price:num(p.precio), compare:num(p.precio_anterior), desc:p.descripcion || "", image:p.foto || null, dial:d[0], strap:d[1], stock:p.hay_stock !== false, example:!!p.ejemplo, chrono:/crono/i.test(p.nombre)};
+    })
+  };
+}
+function getJSON(u){ return fetch(u + "?v=" + Date.now(), {cache:"no-store"}).then(function(r){ if (!r.ok) throw new Error(u); return r.json(); }); }
+
+/* ---------- arranque ---------- */
+shell();
+$("#grid").innerHTML = '<p class="empty">Cargando relojes…</p>';
+Promise.all([getJSON("data/config.json"), getJSON("data/productos.json"), getJSON("data/portada.json")])
+.then(function(r){ S = fromFiles(r[0], r[1], r[2]); renderAll(); })
+.catch(function(){ renderAll(); $("#grid").innerHTML = '<p class="empty">No pudimos cargar los relojes. Recargá la página o escribinos por WhatsApp.</p>'; });
+setInterval(tick, 1000);
+setInterval(function(){ if ((S.hero||[]).length>1 && !document.hidden && Date.now()-lastSwipe > 8000) go(view.slide+1); }, 6000);
+})();
+</script>
+</body>
+</html>
